@@ -21,7 +21,7 @@ class Validator extends BaseValidator
     */
     protected function validateCelularComDdd($attribute, $value)
     {
-        return preg_match('/^\(\d{2}\)\s?\d{4,5}-\d{4}$/', $value) > 0;
+        return preg_match('/^\(\d{2}\)(\s|)\d{4,5}-\d{4}$/', $value) > 0;
     }
  
     /**
